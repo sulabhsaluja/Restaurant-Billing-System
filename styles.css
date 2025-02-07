@@ -4,7 +4,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 20px;
-    background-image: url('images/restaurant-background.png');
+    background-image: url("images/restaurant-background.png");
     background-size: cover;
     background-attachment: fixed;
 }
