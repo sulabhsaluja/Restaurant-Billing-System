@@ -16,7 +16,7 @@ Visual Feedback: Hover effects and animations enhance user experience.
 Clone this repository or download the ZIP file.
 Open index.html in any browser to use the application.
 
-💻 Live Demo: [View the Restaurant Billing Demo](https://sulabhsaluja.github.io/Restaurant_Billing_System)
+💻 Live Demo: [View the Restaurant Billing Demo](https://sulabhsaluja.github.io/Restaurant-Billing-System/)
 
 ## Technologies Used
 HTML: Structure of the web page.
