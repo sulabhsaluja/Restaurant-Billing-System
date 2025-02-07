@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/coffee-cup.png" type="image/x-icon">
+    <title>Restaurant Billing System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Restaurant!</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Appetizers -->
+                <tr class="category-row">
+                    <td rowspan="2" class="category-header">Appetizers</td>
+                    <td>Bruschetta</td>
+                    <td><img src="/images/bruschetta.jpg" alt="Bruschetta" width="150px" title="Bruschetta"></td>
+                    <td>₹ 200</td>
+                    <td><input type="number" id="bruschettaQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Spring Rolls</td>
+                    <td><img src="/images/spring-rolls.jpg" alt="Spring Rolls" width="150px" title="Spring Rolls"></td>
+                    <td>₹ 180</td>
+                    <td><input type="number" id="springRollsQty" value="0" min="0"></td>
+                </tr>
+
+                <!-- Main Courses -->
+                <tr class="category-row">
+                    <td rowspan="2" class="category-header">Main Courses</td>
+                    <td>Grilled Chicken</td>
+                    <td><img src="/images/grilled-chicken.jpg" alt="Grilled Chicken" width="150px" title="Grilled Chicken"></td>
+                    <td>₹ 350</td>
+                    <td><input type="number" id="grilledChickenQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Pasta Alfredo</td>
+                    <td><img src="/images/pasta-alfredo.jpg" alt="Pasta Alfredo" width="150px" title="Pasta Alfredo"></td>
+                    <td>₹ 300</td>
+                    <td><input type="number" id="pastaAlfredoQty" value="0" min="0"></td>
+                </tr>
+
+                <!-- Desserts -->
+                <tr class="category-row">
+                    <td rowspan="2" class="category-header">Desserts</td>
+                    <td>Chocolate Cake</td>
+                    <td><img src="/images/chocolate-cake.jpg" alt="Chocolate Cake" width="150px" title="Chocolate Cake"></td>
+                    <td>₹ 250</td>
+                    <td><input type="number" id="chocolateCakeQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td><img src="/images/cheesecake.jpg" alt="Cheesecake" width="150px" title="Cheesecake"></td>
+                    <td>₹ 280</td>
+                    <td><input type="number" id="cheesecakeQty" value="0" min="0"></td>
+                </tr>
+
+                <!-- Beverages -->
+                <tr class="category-row">
+                    <td rowspan="2" class="category-header">Beverages</td>
+                    <td>Latte</td>
+                    <td><img src="/images/latte.jpeg" alt="Latte" width="150px" title="Latte"></td>
+                    <td>₹ 170</td>
+                    <td><input type="number" id="latteQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td><img src="/images/cappuccino.jpg" alt="Cappuccino" width="150px" title="Cappuccino"></td>
+                    <td>₹ 180</td>
+                    <td><input type="number" id="cappuccinoQty" value="0" min="0"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button onclick="calculateTotal()">Add to Cart</button>
+            <button onclick="clearBill()">Clear</button>
+            <button onclick="order()">Place Order</button>
+        </div>
+
+        <h2><p>Total: </p><input type="text" id="total" value="0" readonly></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
